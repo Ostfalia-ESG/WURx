@@ -20,7 +20,7 @@ This implementation is an experimental solution for research purposes and has th
 
 ## Requirements
 - Hardware
-  - The PCBs (frontend and backend) designed in KiCad [see pcb/](pcb/)
+  - The PCBs (frontend and backend) designed in KiCad (see folder pcb/)
   - A transmitter (e.g. a Software Defined Radio like the USRP B210 with GNU Radio) is needed to send a Wake-up Call
 - To program the $\mu C$ (a PIC16LF1823)
     - [MPLAB&reg; X IDE](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide#)
