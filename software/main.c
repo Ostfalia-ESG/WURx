@@ -213,11 +213,11 @@ void __interrupt() ISR_wur(void) {
             ENABLE_INTERRUPT_RF_IR(0);
             // wait for the sync bit
             ENABLE_INTERRUPT_RF_DATA(1); 
-            ongoing_address_sampling = 1;
         } else { // zero address mode, confirm WUC
             confirm_wake_up_call();
             clear_to_sleep();
         }
+		ongoing_address_sampling = 1;
         
     } else if (IOCAFbits.IOCAF2 == 1) { // config mode enabled
         // clear status flag
